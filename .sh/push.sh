@@ -14,8 +14,8 @@ echo -e "$before▶ 文件已传送到暂存区.$rear"
 git status
 
 echo -e "$before▶ 输入您的提交：$rear"
-read commit
-git commit -m "$commit"
+read tmp_commit
+git commit -m "$tmp_commit"
 echo -e "$before▶ 提交成功添加.$rear"
 
 sleep 1s
