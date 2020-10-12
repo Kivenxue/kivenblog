@@ -33,9 +33,9 @@ echo -e "$before'▶ 项目打包完成.'$rear"
 sleep 1s
 
 # 开始移动文件，把 docs/.vuepress/dist 文件夹全部内容移动到项目根目录
-echo -e "$before'▶ 开始更改dist静态文件夹的位置.'$rear"
-mv docs/.vuepress/dist dist
-echo - "$before'▶ dist文件夹移动成功.'$rear"
+# echo -e "$before'▶ 开始更改dist静态文件夹的位置.'$rear"
+# mv docs/.vuepress/dist dist
+# echo - "$before'▶ dist文件夹移动成功.'$rear"
 
 sleep 1s
 
