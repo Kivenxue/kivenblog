@@ -1,19 +1,15 @@
 #!/bin/bash
 set -e
 
-
 # variable
 before="\033[32m"
 rear="\033[0m"
-gh_branch=ghTemp
-
 
 # 删除文件
 echo -e "$before'▶ 清除已存在文件. '$rear"
 rm -rf dist
 rm -rf docs/.vuepress/dist
 echo -e "$before'▶ 清除完成. '$rear"
-
 
 sleep 1s
 
@@ -35,7 +31,6 @@ npm run build
 echo -e "$before'▶ 项目打包完成.'$rear"
 
 sleep 1s
-
 
 # 开始移动文件，把 docs/.vuepress/dist 文件夹全部内容移动到项目根目录
 echo -e "$before'▶ 开始更改dist静态文件夹的位置.'$rear"
