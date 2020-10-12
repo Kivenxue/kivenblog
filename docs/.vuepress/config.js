@@ -6,8 +6,8 @@ module.exports = {
   head: [
     ["link", { "rel": "icon", "href": "/kiven.ico" }],
     ["link", { "rel": "manifest", "href": "/manifest.json" }],
-    ["meta", { "name": "viewport", "content": "width=device-width,initial-scale=1,user-scalable=no" }]
-    ['meta', { "name": 'theme-color', "content": '#b532b6' }],
+    ["meta", { "name": "viewport", "content": "width=device-width,initial-scale=1,user-scalable=no" }],
+    ['meta', { "name": 'theme-color', "content": '#b532b6' }]
   ],
   themeConfig: {
     type: 'blog',
