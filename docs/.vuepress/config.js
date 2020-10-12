@@ -2,7 +2,6 @@ module.exports = {
   dest: 'dist',
   theme: 'reco',
   title: "KivenBlog",
-  base: "/dist/",
   description: 'Record learning hobbies',
   head: [
     ["link", { "rel": "icon", "href": "/kiven.ico" }],

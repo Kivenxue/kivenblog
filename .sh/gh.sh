@@ -8,7 +8,7 @@ rear="\033[0m"
 # 删除文件
 echo -e "$before'▶ 清除已存在文件. '$rear"
 rm -rf dist
-rm -rf docs/.vuepress/dist
+rm -rf ../dist
 echo -e "$before'▶ 清除完成. '$rear"
 
 sleep 1s
@@ -33,9 +33,9 @@ echo -e "$before'▶ 项目打包完成.'$rear"
 sleep 1s
 
 # 开始移动文件，把 docs/.vuepress/dist 文件夹全部内容移动到项目根目录
-# echo -e "$before'▶ 开始更改dist静态文件夹的位置.'$rear"
-# mv docs/.vuepress/dist dist
-# echo - "$before'▶ dist文件夹移动成功.'$rear"
+echo -e "$before'▶ 开始更改dist静态文件夹的位置.'$rear"
+mv dist ../dist
+echo - "$before'▶ dist文件夹移动成功.'$rear"
 
 sleep 1s
 
@@ -49,7 +49,7 @@ echo -e "$before'▶ 分支切换成功.'$rear"
 # 复制文件
 echo -e "$before'▶ 开始将所有文件移到全局静态文件下.'$rear"
 cd ..
-cp -rvf kivenblog/dist/* kivenblog
+cp -rvf dist/* kivenblog
 cd kivenblog/
 echo -e "$before'▶ 文件复制结束.'$rear"
 
@@ -87,7 +87,7 @@ read dev
 echo  -e "$before'▶ 正在切换分支请稍后... '$rear"
 git checkout "$dev"
 git branch -D gh-pages
-rm -rf dist
+rm -rf ../dist
 git branch
 echo -e "$before'▶ 切换成功，欢迎下次提交.'$rear"
 
