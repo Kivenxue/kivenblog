@@ -25,50 +25,7 @@ module.exports = {
       }
     ],
 
-    sidebar: {
-      '/notes/': [
-        {
-          title: 'Html5',
-          collapsable: true,
-          children: [
-            "Html5/html",
-          ]
-        },
-        {
-          title: 'Css3',
-          collapsable: true,
-          children: [
-            "Css3/css",
-          ]
-        },
-        {
-          title: 'JavaScript',
-          collapsable: true,
-          children: [
-            "Javascript/javascript",
-          ]
-        },
-      ],
-      '/Interview/': [
-        {
-          title: 'Html+Css',
-          collapsable: true,
-          children: [
-            "Html+Css/Html5+Css3",
-          ]
-        },
-        {
-          title: 'JavaScript',
-          collapsable: true,
-          children: [
-            "JavaScript/JavaScript",
-          ]
-        },
-      ]
-  
-    },
-
-    //友情链接
+      //友情链接
     friendLink: [
       {
         title: "午后南杂",
@@ -89,7 +46,8 @@ module.exports = {
         link: "https://wiki.aftersoil.xyz/"
       }
     ],
-  
+      
+      
     blogConfig: {
       category: {
         location: 2,
@@ -100,7 +58,6 @@ module.exports = {
         text: 'Tag'
       }
     },
-  
     logo: "/logo.png",
     author: "KivenXue",
     authorAvatar: "/avatar.jpg",
@@ -108,13 +65,67 @@ module.exports = {
     searchMaxSuggestions: 10,
     sidebarDepth: 1,
     displayAllHeaders: false,
-        
+    sidebar: {
+      '/notes/': [
+        {
+          title: 'Html5',
+          collapsable: true,
+          children: [
+            'Html5/html',
+            'Html5/html5新特性'
+          ]
+        },
+        {
+          title: 'Css3',
+          collapsable: true,
+          children: [
+            "Css3/css",
+            "Css3/css新特性"
+          ]
+        },
+        {
+          title: 'JavaScript',
+          collapsable: true,
+          children: [
+            "Javascript/javascript_basis",
+            "Javascript/javascript_max",
+          ]
+        },
+        {
+          title: 'TypeScript',
+          collapsable: true,
+          children: [
+            "TypeScript/typescript" 
+          ]
+        },
+      ],
+      // 面试题模块
+      '/Interview/': [
+        {
+          title: 'Html+Css',
+          collapsable: true,
+          children: [
+            "Html+Css/Html5+Css3",
+          ]
+        },
+        {
+          title: 'JavaScript',
+          collapsable: true,
+          children: [
+            "JavaScript/JavaScript",
+          ]
+        },
+      ]
+  
+    },
+
     //备案号
     record: false,
     recordLink: 'http://www.beian.miit.gov.cn/',
-    startYear: "2017",
+    // 最后更新时间
+    lastUpdated: 'Last Updated',
+    startYear: "2020",
     noFoundPageByTencent: false,
-
 
   },
   markdown: {
@@ -123,17 +134,17 @@ module.exports = {
 
 
   plugins: [
-    // ["@vuepress-reco/vuepress-plugin-kan-ban-niang",
-    //   {
-    //     theme: ["whiteCat"],
-    //     clean: false,
-    //     messages: {
-    //       welcome: 'Kiven欢迎关注',
-    //       home: '看点什么',
-    //       theme: '好吧，希望你能喜欢我的其他小伙伴。',
-    //       close: '再见哦'
-    //     }
-    //   }],
+    ["@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["whiteCat"],
+        clean: false,
+        messages: {
+          welcome: 'Kiven欢迎关注',
+          home: '看点什么',
+          theme: '好吧，希望你能喜欢我的其他小伙伴。',
+          close: '再见哦'
+        }
+      }],
     ["@vuepress-reco/vuepress-plugin-bgm-player",
       {
         audios: [
